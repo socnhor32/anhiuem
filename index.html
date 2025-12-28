@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Merry Christmas 💖</title>
+
+<style>
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    padding: 0 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #ffe6f0, #ffffff);
+}
+
+/* ===== NỘI DUNG ===== */
+.content{
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
+}
+
+/* ===== TRÁI TIM ===== */
+.heart{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 140px;
+    color: hotpink;
+    animation: beat 1.2s infinite;
+    z-index: 1;
+}
+
+.heart.left{ left: 40px; }
+.heart.right{ right: 40px; }
+
+@keyframes beat{
+    0%{ transform: translateY(-50%) scale(1); }
+    50%{ transform: translateY(-50%) scale(1.15); }
+    100%{ transform: translateY(-50%) scale(1); }
+}
+
+/* ===== GIF ===== */
+.gif{
+    position: fixed;
+    width: 120px;
+    z-index: 3;
+}
+
+.gif.left-top{
+    top: 20px;
+    left: 20px;
+}
+
+.gif.right-top{
+    top: 20px;
+    right: 20px;
+}
+
+/* ===== GIF DƯỚI ===== */
+.bottom-gif{
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    z-index: 2;
+}
+
+/* ===== NCT ===== */
+.nct{
+    position: fixed;
+    bottom: 6px;
+    right: 10px;
+    font-size: 12px;
+    color: #ff6fae;
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px){
+    body{ padding: 0 40px; }
+    .heart{ font-size: 80px; opacity: 0.6; }
+    .gif{ width: 80px; }
+    .bottom-gif{ width: 120px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- GIF TRÊN -->
+<img src="https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUyd3NoaWdvMG8zOGZreHFrdWcxYWtxcDcwbW5kMDM1cnphNTkzeWE3aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/c3Q2EdrCKAsE8z94ZF/200w.gif"
+     class="gif left-top" alt="cute gif">
+
+<img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyd3NoaWdvMG8zOGZreHFrdWcxYWtxcDcwbW5kMDM1cnphNTkzeWE3aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/KztT2c4u8mYYUiMKdJ/giphy.gif"
+     class="gif right-top" alt="cute gif">
+
+<!-- GIF DƯỚI (MILK & MOCHA) -->
+<img src="https://media.tenor.com/5IwP87ORc9MAAAAM/milk-and-mocha-milk-mocha.gif"
+     class="bottom-gif" alt="hug gif">
+
+<!-- TRÁI TIM -->
+<div class="heart left">💗</div>
+<div class="heart right">💗</div>
+
+<!-- LỜI CHÚC -->
+<div class="content">
+    <h1>Merry Christmas 💖</h1>
+    <p>
+        Noel này anh mong em luôn bình yên,<br>
+        luôn mỉm cười thật nhiều<br>
+        và gặp toàn những điều nhẹ nhàng, ấm áp.<br>
+        Cảm ơn em vì đã xuất hiện<br>
+        và làm những ngày này trở nên ấm hơn 🎄
+    </p>
+</div>
+
+<!-- NCT -->
+<div class="nct">NCT</div>
+
+</body>
+</html>
