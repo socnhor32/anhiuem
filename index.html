@@ -5,93 +5,85 @@
 <title>Merry Christmas 💖</title>
 
 <style>
-*{
-    box-sizing: border-box;
-}
+*{box-sizing:border-box}
 
 body{
-    margin: 0;
-    min-height: 100vh;
-    padding: 0 220px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #ffe6f0, #ffffff);
+margin:0;
+min-height:100vh;
+padding:0 220px;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+font-family:Arial,Helvetica,sans-serif;
+background:linear-gradient(135deg,#ffe6f0,#ffffff);
 }
 
 /* ===== NỘI DUNG ===== */
-.content{
-    max-width: 800px;
-    position: relative;
-    z-index: 2;
-}
+.content{max-width:800px;position:relative;z-index:2}
 
 /* ===== TRÁI TIM ===== */
 .heart{
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 140px;
-    color: hotpink;
-    animation: beat 1.2s infinite;
-    z-index: 1;
+position:fixed;
+top:50%;
+transform:translateY(-50%);
+font-size:140px;
+color:hotpink;
+animation:beat 1.2s infinite;
+z-index:1;
 }
-
-.heart.left{ left: 40px; }
-.heart.right{ right: 40px; }
+.heart.left{left:40px}
+.heart.right{right:40px}
 
 @keyframes beat{
-    0%{ transform: translateY(-50%) scale(1); }
-    50%{ transform: translateY(-50%) scale(1.15); }
-    100%{ transform: translateY(-50%) scale(1); }
+0%{transform:translateY(-50%) scale(1)}
+50%{transform:translateY(-50%) scale(1.15)}
+100%{transform:translateY(-50%) scale(1)}
 }
 
 /* ===== GIF ===== */
-.gif{
-    position: fixed;
-    width: 120px;
-    z-index: 3;
-}
-
-.gif.left-top{
-    top: 20px;
-    left: 20px;
-}
-
-.gif.right-top{
-    top: 20px;
-    right: 20px;
-}
+.gif{position:fixed;width:120px;z-index:3}
+.gif.left-top{top:20px;left:20px}
+.gif.right-top{top:20px;right:20px}
 
 /* ===== GIF DƯỚI ===== */
 .bottom-gif{
-    position: fixed;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 160px;
-    z-index: 2;
+position:fixed;
+bottom:10px;
+left:50%;
+transform:translateX(-50%);
+width:160px;
+z-index:2;
 }
 
 /* ===== NCT ===== */
 .nct{
-    position: fixed;
-    bottom: 6px;
-    right: 10px;
-    font-size: 12px;
-    color: #ff6fae;
-    opacity: 0.7;
-    font-weight: bold;
+position:fixed;
+bottom:6px;
+right:10px;
+font-size:12px;
+color:#ff6fae;
+opacity:0.7;
+font-weight:bold;
 }
 
-/* ===== MOBILE ===== */
-@media (max-width: 768px){
-    body{ padding: 0 40px; }
-    .heart{ font-size: 80px; opacity: 0.6; }
-    .gif{ width: 80px; }
-    .bottom-gif{ width: 120px; }
+/* READY */
+#ready,#countdown{display:none}
+#ready button{
+padding:14px 28px;
+border:none;
+border-radius:25px;
+background:#ff4f91;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+
+@media (max-width:768px){
+body{padding:0 40px}
+.heart{font-size:80px;opacity:.6}
+.gif{width:80px}
+.bottom-gif{width:120px}
 }
 </style>
 </head>
@@ -99,34 +91,58 @@ body{
 <body>
 
 <!-- GIF TRÊN -->
-<img src="https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUyd3NoaWdvMG8zOGZreHFrdWcxYWtxcDcwbW5kMDM1cnphNTkzeWE3aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/c3Q2EdrCKAsE8z94ZF/200w.gif"
-     class="gif left-top" alt="cute gif">
+<img src="https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUyd3NoaWdvMG8zOGZreHFrdWcxYWtxcDcwbW5kMDM1cnphNTkzeWE3aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/c3Q2EdrCKAsE8z94ZF/200w.gif" class="gif left-top">
+<img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyd3NoaWdvMG8zOGZreHFrdWcxYWtxcDcwbW5kMDM1cnphNTkzeWE3aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/KztT2c4u8mYYUiMKdJ/giphy.gif" class="gif right-top">
 
-<img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyd3NoaWdvMG8zOGZreHFrdWcxYWtxcDcwbW5kMDM1cnphNTkzeWE3aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/KztT2c4u8mYYUiMKdJ/giphy.gif"
-     class="gif right-top" alt="cute gif">
+<img src="https://media.tenor.com/5IwP87ORc9MAAAAM/milk-and-mocha-milk-mocha.gif" class="bottom-gif">
 
-<!-- GIF DƯỚI (MILK & MOCHA) -->
-<img src="https://media.tenor.com/5IwP87ORc9MAAAAM/milk-and-mocha-milk-mocha.gif"
-     class="bottom-gif" alt="hug gif">
-
-<!-- TRÁI TIM -->
 <div class="heart left">💗</div>
 <div class="heart right">💗</div>
 
-<!-- LỜI CHÚC -->
-<div class="content">
-    <h1>Merry Christmas 💖</h1>
-    <p>
-        Noel này anh mong em luôn bình yên,<br>
-        luôn mỉm cười thật nhiều<br>
-        và gặp toàn những điều nhẹ nhàng, ấm áp.<br>
-        Cảm ơn em vì đã xuất hiện<br>
-        và làm những ngày này trở nên ấm hơn 🎄
-    </p>
+<!-- READY -->
+<div id="ready">
+<h1>Are you ready? 💖</h1>
+<button onclick="start()">Bắt đầu</button>
 </div>
 
-<!-- NCT -->
+<!-- COUNTDOWN -->
+<div id="countdown">
+<h1 id="num">3</h1>
+</div>
+
+<!-- CARD -->
+<div id="card" class="content">
+<h1>Merry Christmas 💖</h1>
+<p>
+Noel này anh mong em luôn bình yên,<br>
+luôn mỉm cười thật nhiều<br>
+và gặp toàn những điều nhẹ nhàng, ấm áp.<br>
+Cảm ơn em vì đã xuất hiện<br>
+và làm những ngày này trở nên ấm hơn 🎄
+</p>
+</div>
+
 <div class="nct">NCT</div>
+
+<script>
+document.getElementById("ready").style.display="block";
+document.getElementById("card").style.display="none";
+
+function start(){
+document.getElementById("ready").style.display="none";
+document.getElementById("countdown").style.display="block";
+let n=3;
+const num=document.getElementById("num");
+const t=setInterval(()=>{
+n--;
+if(n==0){
+clearInterval(t);
+document.getElementById("countdown").style.display="none";
+document.getElementById("card").style.display="block";
+}else num.innerText=n;
+},1000);
+}
+</script>
 
 </body>
 </html>
